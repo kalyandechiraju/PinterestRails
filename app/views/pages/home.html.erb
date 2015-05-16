@@ -1,3 +1,9 @@
+<% if user_signed_in? %>
+<div class="jumbotron">
+	<h1>Echo</h1>
+	<p>You are now logged in</p>
+</div>
+<% else %>
 <div class="jumbotron">
 	<h1>Echo</h1>
 	<p>
@@ -5,5 +11,7 @@
 		<%= link_to "Coming soon", "#"%>
 	</p>
 
-	<p><%= link_to "Sign up Now!", "#", class: "btn btn-primary btn-large"%></p>
+	<p><%= link_to "Sign up Now!", new_user_registration_path, class: "btn btn-primary btn-large"%>
+	</p>
 </div>
+<% end %>

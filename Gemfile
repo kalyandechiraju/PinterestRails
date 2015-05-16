@@ -15,6 +15,11 @@ end
 
 # For bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
+# Devise gem
+gem 'devise'
+# simple form gem
+#gem 'simple_form'
+gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 'master'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
