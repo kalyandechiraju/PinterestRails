@@ -1,11 +1,15 @@
 <%= simple_form_for(@event) do |f| %>
   <%= f.error_notification %>
+  <%= f.full_error :image_file_size, class: "alert alert-danger" %>
+  <%= f.full_error :image_content_type, class: "alert alert-danger" %>
 
   <div class="form-inputs">
 
     <%= f.input :title %>
 
     <%= f.input :description, as: :text, input_html: {rows: "3"} %>
+
+    <%= f.input :image, label: "Upload a cover" %>
 
   </div>
 

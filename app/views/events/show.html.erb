@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="jumbotron">
+	<%= image_tag @event.image(:medium) %>
 	<p>
 		<strong>Title:</strong>
 		<%= @event.title %>
