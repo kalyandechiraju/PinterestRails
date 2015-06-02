@@ -24,7 +24,7 @@ gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 
 
 #gem Paperclip
 gem "paperclip", "~> 4.2"
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
