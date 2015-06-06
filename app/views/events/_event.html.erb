@@ -1,5 +1,5 @@
 <tr>
-	<td><%= image_tag event.image(:medium) %></td>
+	<td><%= link_to (image_tag event.image(:medium)), event %></td>
 	<td><%= event.title %></td>
 	<td><%= event.description %></td>
 	<td><%= event.user.name %></td>
