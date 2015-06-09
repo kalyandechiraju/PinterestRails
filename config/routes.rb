@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   resources :comments
+  resources :events do
+    resources :comments
+  end
+
   resources :events
   devise_for :users
   #get 'pages/home'

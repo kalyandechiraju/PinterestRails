@@ -2,6 +2,7 @@ class Event < ActiveRecord::Base
 
 	belongs_to :user
 	has_attached_file :image, styles: { medium: "320x240>" }
+	has_many :comments
 
 	validates :title, presence: true
 	validates :user_id, presence: true
