@@ -1,6 +1,6 @@
 <%= div_for(comment) do %>
 	<p>
-		<% unless comment.user.name.nil? %>
+		<% unless comment.user.nil? %>
 			<%= comment.user.name %> says:
 		<% end %>
 		<strong><%= h(comment.body) %></strong></br>
