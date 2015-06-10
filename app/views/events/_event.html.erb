@@ -1,7 +1,7 @@
 <div class="col-lg-6">
 	<div class="well">
 		<h3><%= event.title %></h3><br><br>
-		<%= link_to (image_tag event.image(:medium)), event, class: "img-responsive" %><br><br>
+		<%= link_to (image_tag event.image(:medium)), event, class: "img-responsive"%><br><br>
 		<%= event.description %><br><br>
 		created by <%= event.user.name %>
 		<br><br>

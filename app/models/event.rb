@@ -1,8 +1,9 @@
 class Event < ActiveRecord::Base
 
+	has_many :comments, :dependent => :destroy
 	belongs_to :user
 	has_attached_file :image, styles: { medium: "320x240>" }
-	has_many :comments
+	
 
 	validates :title, presence: true
 	validates :user_id, presence: true

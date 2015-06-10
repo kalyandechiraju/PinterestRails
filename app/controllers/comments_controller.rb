@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
   def create
     @event = Event.find(params[:event_id])
     @comment = @event.comments.create(comment_params)
+    @comment.user = current_user
     
     respond_to do |format|
       if @comment.save
@@ -18,7 +19,7 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:body)
+    params.require(:comment).permit(:body, :user_id, :event_id)
   end
 
   # PUT /comments/1
