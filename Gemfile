@@ -13,6 +13,8 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+gem 'bootstrap-material-design'
+
 gem 'rails_12factor', group: :production
 # For bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
