@@ -5,6 +5,7 @@ $navbar-default-bg: white;
 $navbar-default-border: white;
 $btn-primary-bg: royalblue;
 
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
 body{
